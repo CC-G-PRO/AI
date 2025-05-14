@@ -1,0 +1,66 @@
+[
+  {
+    "lecture_id": "CS101_001",
+    "course_name": "자료구조",
+    "professor": "김철수",
+    "time": [
+      {
+        "day": "Tue",
+        "start_time": "10:00",
+        "end_time": "11:15"
+      },
+      {
+        "day": "Thu",
+        "start_time": "10:00",
+        "end_time": "11:15"
+      }
+    ],
+    "location": "정보B101",
+    "subject_code": "CS101",
+    "short_description": "자료 추상화, 배열, 리스트, 스택, 큐, 트리, 그래프 등의 자료구조와 그러한 자료구조를 활용할 수 있는 알고리즘을 배운다. 이 과목을 통해서 학생들은 전산학의 지식을 확대하고 프로그래밍 기술을 향상시킬 수 있다.",
+    "credit": 3,
+    "target_grade": "2학년",
+    "category": "전공선택",
+    "syllabus_url": "https://example.com/syllabus/cs101",
+    "capacity": 50,
+    "note": "수업은 영어로 진행되지 않음",
+    "language": "한국어",
+    "keywords": [
+      "자료구조",
+      "알고리즘",
+      "컴퓨터 과학"
+    ]
+  },
+  {
+    "lecture_id": "CS102_001",
+    "course_name": "알고리즘",
+    "professor": "이영희",
+    "time": [
+      {
+        "day": "Mon",
+        "start_time": "13:00",
+        "end_time": "14:15"
+      },
+      {
+        "day": "Wed",
+        "start_time": "13:00",
+        "end_time": "14:15"
+      }
+    ],
+    "location": "정보A202",
+    "subject_code": "CS102",
+    "short_description": "알고리즘의 기본적인 이해를 하고 대표적인 알고리즘의 형태를 배운다. 알고리즘 유형을 divide-and-conquer, dynamic programming, greedy algorithms, branch-and-bound 등으로 분류하고, 각각의 특성을 이해하도록 한다. 아울러 기본적인 복잡도 문제를 살펴본다. 본 과목을 이수 후 새로운 문제에 대한 해결 알고리즘을 설계할 수 있는 능력을 키운다.",
+    "credit": 3,
+    "target_grade": "2학년",
+    "category": "전공선택",
+    "syllabus_url": "https://example.com/syllabus/cs102",
+    "capacity": 60,
+    "note": "수업은 영어로 진행되지 않음",
+    "language": "한국어",
+    "keywords": [
+      "알고리즘",
+      "문제 해결",
+      "컴퓨터 과학"
+    ]
+  }
+]
