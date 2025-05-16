@@ -7,6 +7,7 @@ import fasttext
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 
+
 # --- 설정값 ---
 FASTTEXT_MODEL_PATH = 'model_fasttext/cc.ko.300.bin'
 COURSES_JSON_PATH = 'courses.json'
@@ -81,6 +82,7 @@ def main():
         return
 
     # 2. Okt 초기화
+    
     okt_tokenizer = Okt()
 
     # 3. courses.json 파일 로드 및 파싱

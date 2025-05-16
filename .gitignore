@@ -16,3 +16,8 @@ tmp/
 
 # gitbook
 _book/
+
+# model_fasttext 디렉토리는유지
+model_fasttext/*
+
+!model_fasttext/.gitkeep
