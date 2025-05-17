@@ -18,9 +18,6 @@ WORKDIR /app
 # 전체 코드 복사
 COPY . .
 
-# FastText 모델 복사
-COPY model_fasttext /app/model_fasttext
-
 # pip 최신화 및 Python 의존성 설치
 RUN pip install --upgrade pip \
     && pip install -r requirements.txt

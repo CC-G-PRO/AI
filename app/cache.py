@@ -24,12 +24,19 @@ def build_processed_courses():
             logger.warning(f"[{name}] 키워드 추출 실패")
             continue
 
+        # 등장 횟수 기반 유사도 강화
+        word_frequencies = {}
+        desc_lower = desc.lower()
+        for word in filtered_keyword_names:
+            word_frequencies[word] = desc_lower.count(word.lower())     
+
         processed.append({
             "course_name": name,
             "subject_code": course.get("subject_code", "N/A"),
             "all_keywords": all_keywords,
             "filtered_keywords_objects": filtered_keyword_objects,
-            "filtered_keyword_names": filtered_keyword_names
+            "filtered_keyword_names": filtered_keyword_names,
+            "word_frequencies": word_frequencies
         })
     logger.info(f"[키워드 전처리 완료] 처리된 과목 수: {len(processed)}")
     return processed

@@ -46,8 +46,11 @@ def recommend_courses(prefer_keyword: str):
         # kRWordRank 점수 * 유사도 합산
         for i, word in enumerate(valid_keywords):
             weight = course["all_keywords"].get(word, 0)
-            weighted_sum += weight * sim_scores[i]
-            total_weight += weight
+            freq = course.get("word_frequencies", {}).get(word, 1) # 빈도수 포함 계산
+            adjusted_weight = weight * freq
+
+            weighted_sum += adjusted_weight*weight * sim_scores[i]
+            total_weight += adjusted_weight
 
         # 평균 가중 유사도 계산
         avg_weighted_score = weighted_sum / total_weight if total_weight > 0 else 0.0
