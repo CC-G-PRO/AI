@@ -11,8 +11,11 @@ logger = logging.getLogger(__name__)
 
 model = load_model()
 
+""" 
+미리 추출된 과목 키워드와 단일 사용자 키워드와의 유사도 계산 함수 
+"""
 def recommend_courses(prefer_keyword: str):
-    # 사용자 입력 키워드 임베딩 부분
+    # 단일 키워드 임베딩 부분
     try :
         prefer_vec = model.get_word_vector(prefer_keyword).reshape(1, -1)
     except Exception as e:
@@ -56,8 +59,8 @@ def recommend_courses(prefer_keyword: str):
         avg_weighted_score = weighted_sum / total_weight if total_weight > 0 else 0.0
 
         results.append({
-            "course_name": course["course_name"],
-            "subject_code": course["subject_code"],
+            "courseName": course["courseName"],
+            "lectureId": course["lectureId"],
             "score": round(float(avg_weighted_score), 4),
             "num_keywords": len(valid_keywords)
         })
@@ -65,3 +68,46 @@ def recommend_courses(prefer_keyword: str):
     # 유사도 기준 정렬
     results.sort(key=lambda x: x["score"], reverse=True)
     return results
+
+""" 
+사용자 입력 키워드를 기반 recommend_coursed 결과 통합, 유사도 높은 과목만 필터링해서 반환 
+"""
+def recommend_by_keywords(user_keywords: list, filtered_lectures: list, top_k=10): 
+    keyword_results = {}
+
+    for keyword in user_keywords:
+        # 사용자 키워드가 여러개 -> 각 키워드마다 recommend_courses 함수 실행
+        single_results = recommend_courses(keyword) 
+        for course in single_results:
+            key = course["courseName"]
+            # 처음 과목이 추천된 경우 
+            if key not in keyword_results: 
+                keyword_results[key] = {
+                    "courseName": course["courseName"],
+                    "lectureId": course["lectureId"],
+                    "score_sum": 0.0,
+                    "num_keywords": course["num_keywords"],
+                    "count": 0
+                }
+            # 다른 키워드에서 동일한 과목 추천된 경우, 두 점수 합산    
+            keyword_results[key]["score_sum"] += course["score"] 
+            keyword_results[key]["count"] += 1
+
+    # api서버에서 받은 과목 리스트 필터링 -> recommend_courses로 유사도 계산 안 된 과목 필터링
+    final_results = []
+    for course in filtered_lectures: 
+        course_name = course.get("courseName", "")
+        entry = keyword_results.get(course_name)
+
+        # 평균 유사도 계산해서 반환
+        if entry:
+            final_results.append({
+                "courseName": course_name,
+                "lectureId": course.get("lectureId"),
+                "aiDescription": course.get("aiDescription", ""),
+                "score": round(entry["score_sum"] / entry["count"], 4)
+            })
+
+    final_results.sort(key=lambda x: x["score"], reverse=True)
+    return final_results[:top_k]
+

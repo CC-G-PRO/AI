@@ -1,66 +1,502 @@
 [
   {
-    "lecture_id": "CS101_001",
-    "course_name": "자료구조",
-    "professor": "김철수",
-    "time": [
-      {
-        "day": "Tue",
-        "start_time": "10:00",
-        "end_time": "11:15"
-      },
-      {
-        "day": "Thu",
-        "start_time": "10:00",
-        "end_time": "11:15"
-      }
-    ],
-    "location": "정보B101",
-    "subject_code": "CS101",
-    "short_description": "자료 추상화, 배열, 리스트, 스택, 큐, 트리, 그래프 등의 자료구조와 그러한 자료구조를 활용할 수 있는 알고리즘을 배운다. 이 과목을 통해서 학생들은 전산학의 지식을 확대하고 프로그래밍 기술을 향상시킬 수 있다.",
-    "credit": 3,
-    "target_grade": "2학년",
-    "category": "전공선택",
-    "syllabus_url": "https://example.com/syllabus/cs101",
-    "capacity": 50,
-    "note": "수업은 영어로 진행되지 않음",
-    "language": "한국어",
-    "keywords": [
-      "자료구조",
-      "알고리즘",
-      "컴퓨터 과학"
-    ]
+    "lectureId": "EE211-00",
+    "courseName": "확률및랜덤변수(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
   },
   {
-    "lecture_id": "CS102_001",
-    "course_name": "알고리즘",
-    "professor": "이영희",
-    "time": [
-      {
-        "day": "Mon",
-        "start_time": "13:00",
-        "end_time": "14:15"
-      },
-      {
-        "day": "Wed",
-        "start_time": "13:00",
-        "end_time": "14:15"
-      }
-    ],
-    "location": "정보A202",
-    "subject_code": "CS102",
-    "short_description": "알고리즘의 기본적인 이해를 하고 대표적인 알고리즘의 형태를 배운다. 알고리즘 유형을 divide-and-conquer, dynamic programming, greedy algorithms, branch-and-bound 등으로 분류하고, 각각의 특성을 이해하도록 한다. 아울러 기본적인 복잡도 문제를 살펴본다. 본 과목을 이수 후 새로운 문제에 대한 해결 알고리즘을 설계할 수 있는 능력을 키운다.",
-    "credit": 3,
-    "target_grade": "2학년",
-    "category": "전공선택",
-    "syllabus_url": "https://example.com/syllabus/cs102",
-    "capacity": 60,
-    "note": "수업은 영어로 진행되지 않음",
-    "language": "한국어",
-    "keywords": [
-      "알고리즘",
-      "문제 해결",
-      "컴퓨터 과학"
-    ]
+    "lectureId": "CSE304-00",
+    "courseName": "알고리즘",
+    "aiDescription": "알고리즘의 기본적인 이해를 하고 대표적인 알고리즘의 형태를 배운다. 알고리즘 유형을 divide-and-conquer, dynamic programming, greedy algorithms 등으로 분류하고, 각각의 특성을 이해하도록 한다."
+  },
+  {
+    "lectureId": "SWCON104-00",
+    "courseName": "웹/파이선프로그래밍(컴퓨터공학과)",
+    "aiDescription": "웹 기술의 기초부터 프론트엔드와 백엔드 구현까지의 전반적인 내용을 실습 중심으로 학습한다."
+  },
+  {
+    "lectureId": "CSE302-00",
+    "courseName": "컴퓨터네트워크",
+    "aiDescription": "컴퓨터 네트워크의 구조와 원리를 배우며 TCP/IP, 라우팅, OSI 7계층 모델 등을 학습한다."
+  },
+  {
+    "lectureId": "SWCON221-00",
+    "courseName": "마이크로서비스프로그래밍(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON370-00",
+    "courseName": "풀스택서비스프로그래밍(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON492-00",
+    "courseName": "풀스택서비스네트워킹(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON201-00",
+    "courseName": "오픈소스SW개발방법및도구(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE211-05",
+    "courseName": "확률및랜덤변수(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE103-01",
+    "courseName": "객체지향프로그래밍",
+    "aiDescription": "객체지향 개념인 클래스, 상속, 다형성 등을 중심으로 실전 중심의 코딩을 진행하며 소프트웨어 설계 능력을 기른다."
+  },
+  {
+    "lectureId": "SWCON311-00",
+    "courseName": "게임그래픽프로그래밍(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE103-00",
+    "courseName": "객체지향프로그래밍",
+    "aiDescription": "객체지향 개념인 클래스, 상속, 다형성 등을 중심으로 실전 중심의 코딩을 진행하며 소프트웨어 설계 능력을 기른다."
+  },
+  {
+    "lectureId": "CSE302-02",
+    "courseName": "컴퓨터네트워크",
+    "aiDescription": "컴퓨터 네트워크의 구조와 원리를 배우며 TCP/IP, 라우팅, OSI 7계층 모델 등을 학습한다."
+  },
+  {
+    "lectureId": "EE211-01",
+    "courseName": "확률및랜덤변수(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "AI3004-00",
+    "courseName": "빅데이터마이닝(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE305-00",
+    "courseName": "데이터베이스",
+    "aiDescription": "관계형 데이터베이스 모델, SQL, 정규화 이론, 트랜잭션, 데이터베이스 설계 및 구현을 학습한다."
+  },
+  {
+    "lectureId": "CSE406-02",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE495-04",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE211-02",
+    "courseName": "확률및랜덤변수(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-03",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE496-07",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE443-00",
+    "courseName": "AI네트워킹",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE210-00",
+    "courseName": "신호와시스템(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE209-02",
+    "courseName": "논리회로(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE204-00",
+    "courseName": "자료구조",
+    "aiDescription": "자료 추상화, 배열, 리스트, 스택, 큐, 트리, 그래프 등의 자료구조와 그러한 자료구조를 활용할 수 있는 알고리즘을 배운다. 이 과목을 통해서 학생들은 전산학의 지식을 확대하고 프로그래밍 기술을 향상시킬 수 있다."
+  },
+  {
+    "lectureId": "CSE301-01",
+    "courseName": "운영체제",
+    "aiDescription": "운영체제의 기본 원리와 주요 구성요소(프로세스, 메모리 관리, 파일 시스템 등)에 대해 배운다."
+  },
+  {
+    "lectureId": "CSE450-00",
+    "courseName": "모바일/웹서비스프로그래밍",
+    "aiDescription": "웹 기술의 기초부터 프론트엔드와 백엔드 구현까지의 전반적인 내용을 실습 중심으로 학습한다."
+  },
+  {
+    "lectureId": "CSE224-00",
+    "courseName": "UI/UX프로그래밍",
+    "aiDescription": "UI/UX의 기본 개념을 바탕으로 사용자 중심의 인터페이스 설계와 구현 방법을 실습한다."
+  },
+  {
+    "lectureId": "CSE406-05",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "SWCON103-00",
+    "courseName": "디자인적사고(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-01",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE428-00",
+    "courseName": "컴퓨터그래픽스",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-04",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE438-00",
+    "courseName": "최신기술콜로키움1",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-06",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE496-00",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE496-05",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE496-04",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE496-03",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE496-02",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE495-07",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE495-06",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE495-01",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE495-05",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE331-00",
+    "courseName": "딥러닝",
+    "aiDescription": "인공신경망, CNN, RNN 등의 딥러닝 모델 구조 및 학습 원리를 중심으로 실습과 이론을 병행한다."
+  },
+  {
+    "lectureId": "CSE335-00",
+    "courseName": "클라우드컴퓨팅",
+    "aiDescription": "클라우드 컴퓨팅의 개념, 가상화, AWS, Docker, Kubernetes 등 최신 기술을 학습한다."
+  },
+  {
+    "lectureId": "CSE302-01",
+    "courseName": "컴퓨터네트워크",
+    "aiDescription": "컴퓨터 네트워크의 구조와 원리를 배우며 TCP/IP, 라우팅, OSI 7계층 모델 등을 학습한다."
+  },
+  {
+    "lectureId": "CSE444-00",
+    "courseName": "AIoT네트워크",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-00",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE495-03",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE426-00",
+    "courseName": "영상처리",
+    "aiDescription": "디지털 이미지의 기본 개념과 필터링, 엣지 검출, 색상 처리 등 영상처리 기법을 학습한다."
+  },
+  {
+    "lectureId": "SWCON253-01",
+    "courseName": "기계학습(컴퓨터공학과)",
+    "aiDescription": "머신러닝의 주요 개념인 회귀, 분류, 클러스터링 등의 알고리즘과 그 응용을 다룬다."
+  },
+  {
+    "lectureId": "CSE305-01",
+    "courseName": "데이터베이스",
+    "aiDescription": "관계형 데이터베이스 모델, SQL, 정규화 이론, 트랜잭션, 데이터베이스 설계 및 구현을 학습한다."
+  },
+  {
+    "lectureId": "SWCON253-00",
+    "courseName": "기계학습(컴퓨터공학과)",
+    "aiDescription": "머신러닝의 주요 개념인 회귀, 분류, 클러스터링 등의 알고리즘과 그 응용을 다룬다."
+  },
+  {
+    "lectureId": "SWCON366-00",
+    "courseName": "3D데이터처리(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON495-00",
+    "courseName": "강화학습(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE403-00",
+    "courseName": "졸업논문(컴퓨터공학전공)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE203-02",
+    "courseName": "컴퓨터구조",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE405-00",
+    "courseName": "졸업프로젝트",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-07",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE406-09",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "SWCON253-02",
+    "courseName": "기계학습(컴퓨터공학과)",
+    "aiDescription": "머신러닝의 주요 개념인 회귀, 분류, 클러스터링 등의 알고리즘과 그 응용을 다룬다."
+  },
+  {
+    "lectureId": "CSE103-02",
+    "courseName": "객체지향프로그래밍",
+    "aiDescription": "객체지향 개념인 클래스, 상속, 다형성 등을 중심으로 실전 중심의 코딩을 진행하며 소프트웨어 설계 능력을 기른다."
+  },
+  {
+    "lectureId": "EE210-01",
+    "courseName": "신호와시스템(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE211-03",
+    "courseName": "확률및랜덤변수(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE104-00",
+    "courseName": "실감미디어컴퓨팅기초",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON312-00",
+    "courseName": "게임인터랙티브테크놀로지(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON254-00",
+    "courseName": "회로와신호(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "SWCON104-01",
+    "courseName": "웹/파이선프로그래밍(컴퓨터공학과)",
+    "aiDescription": "웹 기술의 기초부터 프론트엔드와 백엔드 구현까지의 전반적인 내용을 실습 중심으로 학습한다."
+  },
+  {
+    "lectureId": "CSE495-02",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE496-01",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE211-04",
+    "courseName": "확률및랜덤변수(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-10",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE203-00",
+    "courseName": "컴퓨터구조",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE327-00",
+    "courseName": "소프트웨어공학",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE209-00",
+    "courseName": "논리회로(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-13",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE495-09",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE322-00",
+    "courseName": "컴파일러",
+    "aiDescription": "프로그래밍 언어의 분석 및 번역 과정을 이해하며, 어휘 분석, 문법 분석, 중간 코드 생성 등을 다룬다."
+  },
+  {
+    "lectureId": "CSE301-00",
+    "courseName": "운영체제",
+    "aiDescription": "운영체제의 기본 원리와 주요 구성요소(프로세스, 메모리 관리, 파일 시스템 등)에 대해 배운다."
+  },
+  {
+    "lectureId": "EE210-02",
+    "courseName": "신호와시스템(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE423-00",
+    "courseName": "정보보호",
+    "aiDescription": "정보 보안의 기초, 암호화 기술, 인증 기법, 네트워크 보안 및 시스템 보안 등을 포괄적으로 학습한다."
+  },
+  {
+    "lectureId": "CSE406-12",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE495-00",
+    "courseName": "독립심화학습1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE204-02",
+    "courseName": "자료구조",
+    "aiDescription": "자료 추상화, 배열, 리스트, 스택, 큐, 트리, 그래프 등의 자료구조와 그러한 자료구조를 활용할 수 있는 알고리즘을 배운다. 이 과목을 통해서 학생들은 전산학의 지식을 확대하고 프로그래밍 기술을 향상시킬 수 있다."
+  },
+  {
+    "lectureId": "SWCON496-00",
+    "courseName": "소프트웨어융합보안(컴퓨터공학과)",
+    "aiDescription": "운영체제의 기본 원리와 주요 구성요소(프로세스, 메모리 관리, 파일 시스템 등)에 대해 배운다."
+  },
+  {
+    "lectureId": "SWCON104-02",
+    "courseName": "웹/파이선프로그래밍(컴퓨터공학과)",
+    "aiDescription": "웹 기술의 기초부터 프론트엔드와 백엔드 구현까지의 전반적인 내용을 실습 중심으로 학습한다."
+  },
+  {
+    "lectureId": "SWCON491-00",
+    "courseName": "인공지능과게임프로그래밍(컴퓨터공학과)",
+    "aiDescription": "객체지향 개념인 클래스, 상속, 다형성 등을 중심으로 실전 중심의 코딩을 진행하며 소프트웨어 설계 능력을 기른다."
+  },
+  {
+    "lectureId": "SWCON103-01",
+    "courseName": "디자인적사고(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE4100-00",
+    "courseName": "블록체인프로젝트",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE330-00",
+    "courseName": "SW스타트업비즈니스",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE406-14",
+    "courseName": "캡스톤디자인",
+    "aiDescription": "실제 문제를 해결하는 팀 프로젝트를 수행하며 문제해결력과 개발 역량을 통합적으로 향상시킨다."
+  },
+  {
+    "lectureId": "CSE496-06",
+    "courseName": "연구연수활동1(컴퓨터공학)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE304-02",
+    "courseName": "알고리즘",
+    "aiDescription": "알고리즘의 기본적인 이해를 하고 대표적인 알고리즘의 형태를 배운다. 알고리즘 유형을 divide-and-conquer, dynamic programming, greedy algorithms 등으로 분류하고, 각각의 특성을 이해하도록 한다."
+  },
+  {
+    "lectureId": "EE209-01",
+    "courseName": "논리회로(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE201-00",
+    "courseName": "이산구조",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "CSE304-01",
+    "courseName": "알고리즘",
+    "aiDescription": "알고리즘의 기본적인 이해를 하고 대표적인 알고리즘의 형태를 배운다. 알고리즘 유형을 divide-and-conquer, dynamic programming, greedy algorithms 등으로 분류하고, 각각의 특성을 이해하도록 한다."
+  },
+  {
+    "lectureId": "CSE201-01",
+    "courseName": "이산구조",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "EE209-03",
+    "courseName": "논리회로(컴퓨터공학과)",
+    "aiDescription": "본 교과목은 컴퓨터공학의 주요 개념과 기술을 학습하는 데 중점을 둡니다."
+  },
+  {
+    "lectureId": "AI3001-00",
+    "courseName": "고급딥러닝(컴퓨터공학과)",
+    "aiDescription": "인공신경망, CNN, RNN 등의 딥러닝 모델 구조 및 학습 원리를 중심으로 실습과 이론을 병행한다."
   }
 ]

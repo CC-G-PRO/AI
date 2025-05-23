@@ -13,7 +13,7 @@ FASTTEXT_MODEL_PATH = "model_fasttext/cc.ko.300.bin"
 MODEL_URL = "https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ko.300.bin.gz"
 
 # 테스트 과목 수 확장
-COURSES_JSON_PATH = "coursesFull.json" 
+COURSES_JSON_PATH = "courses.json" 
 
 logger = logging.getLogger(__name__)
 

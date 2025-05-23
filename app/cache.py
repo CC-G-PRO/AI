@@ -12,8 +12,8 @@ def build_processed_courses():
     processed = []
     logger.info("[키워드 전처리 시작]")
     for idx, course in enumerate(courses):
-        name = course.get("course_name", f"N/A_{idx}")
-        desc = course.get("short_description", "")
+        name = course.get("courseName", f"N/A_{idx}")
+        desc = course.get("aiDescription", "")
 
         if not desc:
             logger.warning(f"[{name}] 설명 없음 - 건너뜀")
@@ -31,8 +31,8 @@ def build_processed_courses():
             word_frequencies[word] = desc_lower.count(word.lower())     
 
         processed.append({
-            "course_name": name,
-            "subject_code": course.get("subject_code", "N/A"),
+            "lectureId": course.get("lectureId", f"UNK_{idx}"),
+            "courseName": name,
             "all_keywords": all_keywords,
             "filtered_keywords_objects": filtered_keyword_objects,
             "filtered_keyword_names": filtered_keyword_names,
