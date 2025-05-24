@@ -6,6 +6,7 @@ import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from app.loader import load_model
 from app.cache import PROCESSED_COURSES
+import re
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +38,15 @@ def recommend_courses(prefer_keyword: str):
                 logger.warning(f"[임베딩 실패] '{word}': {e}")
                 continue
 
+        # 과목 이름에 대해 벡터 추출 및 전처리 진행 (과목 이름도 키워드로 사용)
+        course_name = re.sub(r'\(.*?\)', '', course["courseName"]).rstrip()
+        try:
+            keyword_vecs.append(model.get_word_vector(course_name))
+            valid_keywords.append(course_name)
+        except Exception as e:
+            logger.warning(f"[임베딩 실패] '{word}': {e}")
+            continue
+
         if not keyword_vecs:
             continue
         
@@ -45,19 +55,24 @@ def recommend_courses(prefer_keyword: str):
 
         weighted_sum = 0
         total_weight = 0
-
         # kRWordRank 점수 * 유사도 합산
         for i, word in enumerate(valid_keywords):
-            weight = course["all_keywords"].get(word, 0)
-            freq = course.get("word_frequencies", {}).get(word, 1) # 빈도수 포함 계산
+            weight = course["all_keywords"].get(word, 0) 
+            #과목 이름의 경우 가중치 2.00를 부여
+            if word == course_name:
+                weight = 2.00
+            #freq = course.get("word_frequencies", {}).get(word, 1) # 빈도수 포함 계산
+            #freq가 큰 단어는 가중치도 일반적으로 크게 부여되는 경향이 있음. '알고리즘' 과목의 경우 '알고리즘' 단어 반복이 많아 지나치게 큰 비중을 차지하는 경우가 발생함. 따라서 빈도수는 고려하지 않고 freq는 1로 고정
+            freq = 1
+            #logger.info(f"[과목명] {course['courseName']}, {word} : {weight}, frequency: {freq}")
             adjusted_weight = weight * freq
 
-            weighted_sum += adjusted_weight*weight * sim_scores[i]
+            #기존엔 weighted_sum += adjusted_weight * weight * sim_scores[i] 식으로 되어있어서 weighted_sum에 weight가 제곱해서 반영되는 문제가 있었음. 이미 adjusted_weight엔 weight가 반영된 값임.
+            weighted_sum += adjusted_weight * sim_scores[i]
             total_weight += adjusted_weight
 
         # 평균 가중 유사도 계산
         avg_weighted_score = weighted_sum / total_weight if total_weight > 0 else 0.0
-
         results.append({
             "courseName": course["courseName"],
             "lectureId": course["lectureId"],
