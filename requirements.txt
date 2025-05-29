@@ -7,3 +7,5 @@ scipy
 tqdm
 uvicorn
 krwordrank
+python-dotenv
+boto3

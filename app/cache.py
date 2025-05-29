@@ -1,16 +1,23 @@
-# 사용자 입력과 비교하기 전, 각 course에서 미리 키워드를 추출
-# test.py에서 107줄 4. 에 해당
-
+import os
 import logging
 from app.loader import load_courses
 from app.keyword_extractor import extract_keywords
 
 logger = logging.getLogger(__name__)
 
-def build_processed_courses():
-    courses = load_courses()
+
+# 내부 테스트 여부 판별
+USE_INTERNAL_TEST = os.environ.get("INTERNAL_TEST", "true").lower() == "true"
+
+def build_processed_courses(courses=None):
+    if courses is None:
+        if USE_INTERNAL_TEST:
+            logger.info("[테스트용] courses.json에서 과목 데이터 로딩")
+            courses = load_courses()
+        else:
+            raise ValueError("API 연동 시에는 courses 인자를 반드시 전달해야합니다.")
+        
     processed = []
-    logger.info("[키워드 전처리 시작]")
     for idx, course in enumerate(courses):
         name = course.get("courseName", f"N/A_{idx}")
         desc = course.get("aiDescription", "")
@@ -41,4 +48,5 @@ def build_processed_courses():
     logger.info(f"[키워드 전처리 완료] 처리된 과목 수: {len(processed)}")
     return processed
 
-PROCESSED_COURSES = build_processed_courses()
+# 내부 테스트인 경우만 캐시 미리 생성
+PROCESSED_COURSES = build_processed_courses() if USE_INTERNAL_TEST else None

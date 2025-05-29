@@ -1,7 +1,3 @@
-# 키워드 추출 함수
-# test.py에서 extract_and_filter_keywords() 
-# okt 객체는 내부에서 생성하도록 변경했습니다.
-
 import logging
 from krwordrank.word import KRWordRank
 from konlpy.tag import Okt

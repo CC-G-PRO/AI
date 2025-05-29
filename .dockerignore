@@ -1,3 +1,4 @@
 # .dockerignore
 model_fasttext/cc.ko.300.bin
 model_fasttext/*
+.env*

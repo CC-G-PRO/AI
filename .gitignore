@@ -17,6 +17,8 @@ tmp/
 # gitbook
 _book/
 
+.env*
+
 # model_fasttext 디렉토리는유지
 model_fasttext/*
 
