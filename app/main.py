@@ -35,7 +35,7 @@ class FilteredLecture(BaseModel):
     lectureId: str
     courseName: str
     aiDescription: str
-    description: Optional[str] = None  
+    #description: Optional[str] = None  
 
 class AiFilterRequest(BaseModel):
     userWantedKeywords: List[str]

@@ -79,7 +79,7 @@ def recommend_courses(prefer_keyword: str, processed_courses: list):
     return results
 
 
-def recommend_by_keywords(user_keywords: list, filtered_lectures: list, top_k=10): 
+def recommend_by_keywords(user_keywords: list, filtered_lectures: list, top_k: int = 100): 
 
     processed_courses = PROCESSED_COURSES if PROCESSED_COURSES else build_processed_courses(filtered_lectures)
 
@@ -90,7 +90,7 @@ def recommend_by_keywords(user_keywords: list, filtered_lectures: list, top_k=10
         # 사용자 키워드가 여러개 -> 각 키워드마다 recommend_courses 함수 실행
         single_results = recommend_courses(keyword, processed_courses) 
         for course in single_results:
-            key = course["courseName"]
+            key = course["lectureId"]
 
             # 처음 과목이 추천된 경우 
             if key not in keyword_results: 
@@ -107,15 +107,14 @@ def recommend_by_keywords(user_keywords: list, filtered_lectures: list, top_k=10
 
     # api서버에서 받은 과목 리스트 필터링 -> recommend_courses로 유사도 계산 안 된 과목 필터링
     final_results = []
-    for course in filtered_lectures: 
-        course_name = course.get("courseName", "")
-        entry = keyword_results.get(course_name)
-
+    for course in filtered_lectures:
+        lecture_id = course.get("lectureId")
+        entry = keyword_results.get(lecture_id)
         # 평균 유사도 계산해서 반환
         if entry:
             final_results.append({
-                "courseName": course_name,
-                "lectureId": course.get("lectureId"),
+                "courseName": course.get("courseName"),
+                "lectureId": lecture_id,
                 "aiDescription": course.get("aiDescription", ""),
                 "score": round(entry["score_sum"] / entry["count"], 4)
             })
